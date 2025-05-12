@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url("makeup-set.jpg");
+                background-repeat: no-repeat;
+            }
+        </style>
+    </head>
+ 
+  <body>
+      <center>
+<h1 style="color: pink";>Makeup time💄!!</h1>
+    
+    <h2  style="color:Pink"><b>Today I'm gonna give makeup tips in my way 😎.Follow my rules hopefully there will be no way to avoid being laughed at . Actually hope not so 😅. Here at first i will let you know about a simple rule of common makeup:</b></h2>
+          <div class="container container-1 mt-5 border border-dark p-5 " style="text-align:center; background-color:Pink; ">
+    <p  style="color: red">If you maintain this using steps,it can be helpfull for you....</p>
+        
+          
+    <h3 id="demo"></h3>
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+    <h3 id="demo3"></h3>
+    <h3 id="demo4"></h3>
+    <h3 id="demo5"></h3>
+    <h3 id="demo6"></h3>
+    <h3 id="demo7"></h3>
+    <h3 id="demo8"></h3>
+    <h3 id="demo9"></h3>
+    <h3 id="demo10"></h3>
+    <h3 id="demo11"></h3>
+          </div>
+         
+   <script >
+       
+     var Makeup = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k","l","n"];
+     
+     var items =[
+         "1.Primer",
+         "11.Lipstick",
+         "5.Blusion",
+         "10.Mascara",
+         "2.Foundation",
+         "8.Eyeshadow",
+         "9.Eyeliner",
+         "3.Concealer",
+         "4.Bronzer",
+         "7.Loose powder",
+         "13.Setting spray",
+         "12.Lip gloss",
+         "6.Highlighter"
+     ];
+    
+       document.getElementById("demo").innerHTML = items[0];
+        document.getElementById("demo1").innerHTML = items[4];
+        document.getElementById("demo2").innerHTML = items[7];
+         document.getElementById("demo3").innerHTML = items[8];
+         document.getElementById("demo4").innerHTML = items[2];
+         document.getElementById("demo5").innerHTML = items[12];
+         document.getElementById("demo6").innerHTML = items[9];
+         document.getElementById("demo7").innerHTML = items[5];
+         document.getElementById("demo8").innerHTML = items[6];
+         document.getElementById("demo9").innerHTML = items[3];
+         document.getElementById("demo10").innerHTML = items[1];
+         document.getElementById("demo11").innerHTML = items[11];
+         document.getElementById("demo12").innerHTML = items[10];
+         document.getElementById("demo13").innerHTML = items[12];
+   
+   </script>
+          <h1 style="color:Pink">Now choose your type: </h1>
+          <div class="container container-1 mt-5 border border-dark p-5 " style="text-align:center; background-color:Black; ">
+        
+             
+      <h4 style="color: pink">Casual:</h4>
+        <p id="myjoin"style="color: pink" ></p>
+      <h4 style="color: pink" >Hangout:</h4>
+          <p id="myfirstpop" style="color: pink" ></p>
+      <h4 style="color: pink">One kind of formal:</h4>
+          <p id="mysecondpop" style="color: pink"></p>
+      <h4 style="color: pink" >Party:</h4>
+            <p id="myFirstPush"style="color: pink"></p>
+
+          </div>
+      <script>
+       var item=[ "Blusion", "Loose Powder","Eyeliner", "Mascara","Lipgloss"];
+          
+       document.getElementById("myjoin").innerHTML =    item.join("+");
+
+
+       var make=["Foundation", "Loose Powder","Eyeliner", "Mascara","Lipstick","Lipgloss","Blusion"];
+          
+       document.getElementById("myfirstpop").innerHTML = make;
+       make.pop();
+       document.getElementById("mysecondpop").innerHTML = make;
+       make.push("Eyeshadow");
+       document.getElementById("myFirstPush").innerHTML = make;
+
+     
+
+   </script>
+      <h2>Now i dare you to pick one and try with the following steps that i had shown....</h2>
+      <button onclick="pickType()">Get a Type</button>
+        <p id="result"></p>
+        <script>
+
+
+            var types = ["Casual", "Hangout", "One kind of formal", "Party"];
+          function pickType(){
+              
+       var n=types.length;
+             
+              var takeRandom=Math.random()*n 
+              var randomIndex=Math.floor(takeRandom);
+              
+              document.getElementById("result").innerHTML = "You got:"+types[randomIndex];
+          }
+
+        </script>
+      </center>
+
+
+
+  </body>
+</html>
